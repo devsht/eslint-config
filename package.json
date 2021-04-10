@@ -1,0 +1,28 @@
+{
+  "name": "@devsht/eslint-config",
+  "version": "0.0.0",
+  "description": "Reusable eslint config",
+  "main": "index.js",
+  "repository": "git@github.com:devsht/eslint-config.git",
+  "author": "Michael Mason <mjmasn@gmail.com>",
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.21.0",
+    "@typescript-eslint/parser": "^4.21.0",
+    "eslint": "^7.24.0",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-import-resolver-typescript": "^2.4.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-json": "^2.1.2",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-promise": "^5.1.0"
+  },
+  "devDependencies": {
+    "@devsht/prettier-config": "^1.0.0",
+    "prettier": "^2.2.1",
+    "typescript": "^4.2.4"
+  },
+  "peerDependencies": {
+    "typescript": "*"
+  },
+  "prettier": "@devsht/prettier-config"
+}
