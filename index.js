@@ -16,7 +16,6 @@ module.exports = {
     'plugin:import/typescript',
     'plugin:json/recommended',
     'plugin:prettier/recommended',
-    'prettier/@typescript-eslint',
   ],
   parser: '@typescript-eslint/parser',
   parserOptions: {
