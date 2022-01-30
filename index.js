@@ -181,6 +181,10 @@ module.exports = {
       },
     },
   ],
+  parserOptions: {
+    ecmaVersion: 'latest',
+    sourceType: 'module',
+  },
   plugins: ['promise'],
   settings: {
     'import/parsers': {
