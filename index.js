@@ -9,27 +9,28 @@ module.exports = {
   },
   extends: [
     'eslint:recommended',
-    'plugin:@typescript-eslint/recommended',
     'plugin:import/errors',
     'plugin:import/warnings',
     'plugin:import/recommended',
-    'plugin:import/typescript',
     'plugin:json/recommended',
     'plugin:prettier/recommended',
   ],
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    ecmaVersion: 2020,
-    sourceType: 'module',
-    tsconfigRootDir: path.join(__dirname, '../../..'),
-  },
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
+      parser: '@typescript-eslint/parser',
       parserOptions: {
+        ecmaVersion: 2020,
         project: ['./tsconfig.json'],
+        sourceType: 'module',
+        tsconfigRootDir: path.join(__dirname, '../../..'),
       },
-      extends: ['plugin:@typescript-eslint/recommended-requiring-type-checking'],
+      plugins: ['@typescript-eslint'],
+      extends: [
+        'plugin:import/typescript',
+        'plugin:@typescript-eslint/recommended',
+        'plugin:@typescript-eslint/recommended-requiring-type-checking',
+      ],
       rules: {
         // Typescript overrides
         'brace-style': 'off',
@@ -180,7 +181,7 @@ module.exports = {
       },
     },
   ],
-  plugins: ['@typescript-eslint', 'promise'],
+  plugins: ['promise'],
   settings: {
     'import/parsers': {
       '@typescript-eslint/parser': ['.ts', '.tsx', '.d.ts'],
