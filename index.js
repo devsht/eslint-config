@@ -4,8 +4,7 @@ const path = require('path');
 /* eslint-disable sort-keys */
 module.exports = {
   env: {
-    es2020: true,
-    node: true,
+    es2021: true,
   },
   extends: [
     'eslint:recommended',
@@ -18,11 +17,8 @@ module.exports = {
   overrides: [
     {
       files: ['*.ts', '*.tsx'],
-      parser: '@typescript-eslint/parser',
       parserOptions: {
-        ecmaVersion: 2020,
         project: ['./tsconfig.json'],
-        sourceType: 'module',
         tsconfigRootDir: path.join(__dirname, '../../..'),
       },
       plugins: ['@typescript-eslint'],
@@ -181,6 +177,7 @@ module.exports = {
       },
     },
   ],
+  parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
