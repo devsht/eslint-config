@@ -6,12 +6,12 @@
   "repository": "git@github.com:devsht/eslint-config.git",
   "author": "Michael Mason <mjmasn@gmail.com>",
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.8.0",
-    "@typescript-eslint/parser": "^5.8.0",
-    "eslint": "^8.5.0",
-    "eslint-config-prettier": "^8.1.0",
+    "@typescript-eslint/eslint-plugin": "^5.12.0",
+    "@typescript-eslint/parser": "^5.12.0",
+    "eslint": "^8.9.0",
+    "eslint-config-prettier": "^8.4.0",
     "eslint-import-resolver-typescript": "^2.4.0",
-    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-import": "^2.25.4",
     "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-prettier": "^4.0.0",
     "eslint-plugin-promise": "^6.0.0"
@@ -19,7 +19,7 @@
   "devDependencies": {
     "@devsht/prettier-config": "^1.0.0",
     "prettier": "^2.2.1",
-    "typescript": "^4.2.4"
+    "typescript": "^4.5.5"
   },
   "peerDependencies": {
     "typescript": "*"
