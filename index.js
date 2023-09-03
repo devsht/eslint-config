@@ -53,8 +53,6 @@ module.exports = {
         '@typescript-eslint/no-array-constructor': 'error', // included in recommended
         'no-dupe-class-members': 'off',
         '@typescript-eslint/no-dupe-class-members': 'error',
-        'no-duplicate-imports': 'off',
-        '@typescript-eslint/no-duplicate-imports': 'error',
         'no-empty-function': 'off',
         '@typescript-eslint/no-empty-function': 'error', // included in recommended
         'no-extra-parens': 'off',
@@ -143,17 +141,15 @@ module.exports = {
         '@typescript-eslint/no-confusing-void-expression': 'error',
         '@typescript-eslint/no-dynamic-delete': 'error',
         '@typescript-eslint/no-extraneous-class': 'error',
-        '@typescript-eslint/no-implicit-any-catch': 'error',
         '@typescript-eslint/no-invalid-void-type': 'error',
-        '@typescript-eslint/no-parameter-properties': 'error',
         '@typescript-eslint/no-require-imports': 'error',
-        '@typescript-eslint/no-type-alias': 'off',
         '@typescript-eslint/no-unnecessary-boolean-literal-compare': 'error',
         '@typescript-eslint/no-unnecessary-condition': 'error',
         '@typescript-eslint/no-unnecessary-qualifier': 'error',
         '@typescript-eslint/no-unnecessary-type-arguments': 'error',
         '@typescript-eslint/no-unnecessary-type-constraint': 'error',
         '@typescript-eslint/non-nullable-type-assertion-style': 'error',
+        '@typescript-eslint/parameter-properties': 'error',
         '@typescript-eslint/prefer-enum-initializers': 'error',
         '@typescript-eslint/prefer-for-of': 'error',
         '@typescript-eslint/prefer-function-type': 'error',
@@ -168,7 +164,7 @@ module.exports = {
         '@typescript-eslint/prefer-ts-expect-error': 'error',
         '@typescript-eslint/promise-function-async': 'error',
         '@typescript-eslint/require-array-sort-compare': 'error',
-        '@typescript-eslint/sort-type-union-intersection-members': 'error',
+        '@typescript-eslint/sort-type-constituents': 'error',
         '@typescript-eslint/strict-boolean-expressions': 'error',
         '@typescript-eslint/switch-exhaustiveness-check': 'error',
         '@typescript-eslint/type-annotation-spacing': 'off',
@@ -433,7 +429,7 @@ module.exports = {
 
     // ECMAScript 6
     'no-confusing-arrow': ['error', { allowParens: false }],
-    'no-duplicate-imports': 'error',
+    'no-duplicate-imports': 'off',
     'no-useless-computed-key': [
       'error',
       {
@@ -499,5 +495,6 @@ module.exports = {
       },
     ],
     'import/no-cycle': 'error',
+    'import/no-duplicates': 'error',
   },
 };
