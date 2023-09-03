@@ -1,6 +1,6 @@
 {
   "name": "@devsht/eslint-config",
-  "version": "2.1.1",
+  "version": "2.1.2",
   "description": "Reusable eslint config",
   "main": "index.js",
   "repository": "git@github.com:devsht/eslint-config.git",
